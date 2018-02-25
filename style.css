@@ -6,7 +6,6 @@ html, body{
 }
 
 body{
-	font-family: 'Pacifico', cursive;
 }
 
 a{
@@ -16,6 +15,7 @@ a{
 
 
 .navigation h1{
+	font-family: 'Pacifico', cursive;
 	font-size: 20px;
 	width: 100%;
 }
@@ -82,13 +82,17 @@ a{
 	border: 1px solid black;
 }
 
-.entry img{
+.food-picture{
 	max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
 }
-.entry p{
+.food-name{
 	font-size: 13px;
+}
+
+.food-description{
+	font-size: 10px;
 }
 
 .food-picture{
@@ -144,8 +148,12 @@ a{
 		height: 450px;
 	}
 
-    .entry p{
-		font-size: 25px;
+    .food-name{
+		font-size: 23px;
+	}
+
+	.food-description{
+		font-size: 18px;
 	}
 }
 
@@ -175,10 +183,6 @@ a{
 
 	.entry{
 		width: 23%;
-	}
-
-	.entry p{
-		font-size: 20px;
 	}
 
 }

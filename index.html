@@ -18,99 +18,73 @@
     </head>
 
     <body>
-        <div id="main">
-            <div class="col-12 col-m-12 navigation">
-
-                <h1>
-                    <div class="col-1 col-m-1 navigation-left-icon button" onclick="openNav()">
-                        <i class="fas fa-align-justify fa-2x"></i>
-                    </div>
-                    <div id="mySidenav" class="sidenav">
-                        <i class="far fa-times-circle closeIcon" onclick="closeNav()"></i>
-                    </div>
-                    <div class="col-1 col-m-1 navigation-right-icon">
-                        <a href="https://atessosa.github.io/portfolio/" target="_blank">
-                            <i class="fas fa-user-circle fa-2x"></i>
-                        </a>
-                    </div>
-                    Hüseyin's FoodDiary
-                </h1>
+        <div id="header" class="col-12 col-m-12 navigation">
+            <h1>Foodblog</h1>
+            <div class="portfolioLink">
+                <a href="https://atessosa.github.io/portfolio/" target="_blank">
+                    <img src="image_content/lebenslauf_preview.png">
+                </a>
             </div>
-
+        </div>
+        <div class="fullPageImage"></div>
+        <div id="" class="col-12 col-m-12 mainContent">
             <div class="col-12 col-m-12 food-container">
                 <div class="col-3 col-m-6 entry">
-                    <div class="food-picture"></div>
-                    <p class="food-name">Currysuppe mit Reisnudeln</p>
-                    <p class="food-description">Eine einfache vegetarische Suppe</p>
+                    <div class="food-picture">
+                        <div class="imagePlaceholder"><h2>Bild</h2></div>
+                    </div>
+                    <div class="food-name">
+                        <div class="titlePlaceholder"><h2>Titel</h2></div>
+                    </div>
+                    <div class="food-description">
+                        <div class="descpriptionPlaceholder"><p>Kurzbeschreibung</p></div>
+                    </div>
                 </div>
                 <div class="col-3 col-m-6 entry">
-                    <div class="food-picture"></div>
-                    <p class="food-name"></p>
-                    <p class="food-description"></p>
+                    <div class="food-picture">
+                        <div class="imagePlaceholder"><h2>Bild</h2></div>
+                    </div>
+                    <div class="food-name">
+                        <div class="titlePlaceholder"><h2>Titel</h2></div>
+                    </div>
+                    <div class="food-description">
+                        <div class="descpriptionPlaceholder"><p>Kurzbeschreibung</p></div>
+                    </div>
                 </div>
                 <div class="col-3 col-m-6 entry">
-                    <div class="food-picture"></div>
-                    <p class="food-name"></p>
-                    <p class="food-description"></p>
+                    <div class="food-picture">
+                        <div class="imagePlaceholder"><h2>Bild</h2></div>
+                    </div>
+                    <div class="food-name">
+                        <div class="titlePlaceholder"><h2>Titel</h2></div>
+                    </div>
+                    <div class="food-description">
+                        <div class="descpriptionPlaceholder"><p>Kurzbeschreibung</p></div>
+                    </div>
                 </div>
                 <div class="col-3 col-m-6 entry">
-                    <div class="food-picture"></div>
-                    <p class="food-name"></p>
-                    <p class="food-description"></p>
+                    <div class="food-picture">
+                        <div class="imagePlaceholder"><h2>Bild</h2></div>
+                    </div>
+                    <div class="food-name">
+                        <div class="titlePlaceholder"><h2>Titel</h2></div>
+                    </div>
+                    <div class="food-description">
+                        <div class="descpriptionPlaceholder"><p>Kurzbeschreibung</p></div>
+                    </div>
                 </div>
-            </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                var w = window.outerWidth;
-
-                if(w < 600){
-                    document.getElementById("mySidenav").style.width = "150px";
-                    document.getElementById("main").style.marginLeft = "150px";
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "100%";
-                     }
-                }
-                else if(w <= 768){
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "48%";
-                     }
-
-                }
-                else {  
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "31%";
-                     }
-                }
-            }
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-                var w = window.outerWidth;
-                if(w < 600){
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "48%";
-                     }
-                }
-                else if(w <= 768){
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "48";
-                     }
-                }
-                else{  
-                    var x = document.getElementsByClassName("entry");
-                    for(var i=0; i< x.length;i++){
-                        x[i].style.width = "23%";
-                     }
-                }
-            }
-        </script>
+                <div class="col-3 col-m-6 entry">
+                    <div class="food-picture">
+                        <div class="imagePlaceholder"><h2>Bild</h2></div>
+                    </div>
+                    <div class="food-name">
+                        <div class="titlePlaceholder"><h2>Titel</h2></div>
+                    </div>
+                    <div class="food-description">
+                        <div class="descpriptionPlaceholder"><p>Kurzbeschreibung</p></div>
+                    </div>
+                </div>
+                
+            </div> 
     </div>
 </html>
